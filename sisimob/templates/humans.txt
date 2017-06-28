@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	Daniel Pires -- Developer -- @danizavtz
+
+# THANKS
+	Open Source Community
+	Modernizr
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Python, Django
