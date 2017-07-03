@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <h2>Imóveis</h2>
+        <ul class="list-group">
+            {% for imovel in imoveis %}
+            <a href="/cadastro/{{imovel.pk}}">
+                <li class="list-group-item">{{ imovel.nome }}</li>
+            </a>
+            {% empty %}
+            <li>Não há imoveis cadastrados.</li>
+            {% endfor %}
+        </ul>
+        <br>
+    </div>
+</div>
+{% endblock %}

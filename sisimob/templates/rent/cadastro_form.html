@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>Formulário para cadastro novo imóvel</h1>
+        <form class="form-horizontal" action="" method="post">{% csrf_token %} {{ form.non_field_errors }}
+            <fieldset>
+                <legend>Dados para cadastro</legend>
+                <div class="form-group">
+                    <p>
+                        <label class="col-sm-2 control-label" for="{{ form.nome.id_for_label }}">{{ form.nome.label }}</label>
+                        {{ form.nome }} {{ form.nome.errors }}
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label class="col-sm-2 control-label" for="{{ form.endereco.id_for_label }}">{{ form.endereco.label }}</label>
+                        {{ form.endereco }} {{ form.endereco.errors }}
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label class="col-sm-2 control-label" for="{{ form.preco.id_for_label }}">{{ form.preco.label }}</label>
+                        {{ form.preco }} {{ form.preco.errors }}
+                    </p>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <input class="btn btn-success btn-lg" type="submit" id="btnLogin" value="Cadastrar">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

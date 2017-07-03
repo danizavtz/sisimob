@@ -1,9 +1,20 @@
 {% extends "base.html" %} {% block head_title %}Rent a house{% endblock %} {% block content %}
+
+{%block login %}
+  <form class="navbar-form navbar-right" action="/login" method="post">
+  {% csrf_token %}
+    {% for field in auth_form %}
+    {{ field }}
+    {% endfor %}
+
+    <input type="submit" id="btnLogin" value="Log in">
+  </form>
+{% endblock %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
         <h1>Rent a House</h1>
-        <p>Esse site é destinado a fazer busca por casas para alugar, temos o interesse de concorrer com air bad and breakfast</p>
+        <p>Esse site é destinado a fazer busca por casas para alugar, temos o interesse de concorrer com air bed and breakfast</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver lista de imóveis disponíveis &raquo;</a></p>
     </div>
 </div>

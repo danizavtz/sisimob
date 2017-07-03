@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="card" style="width: 20rem">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">{{imovel.nome}}</h4>
+                <p class="card-text">{{imovel.endereco}}</p>
+                <p class="card-text">{{imovel.preco}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
