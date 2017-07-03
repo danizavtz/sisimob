@@ -30,7 +30,7 @@ def new(request):
 
 @login_required
 def create(request):
-	form = ImovelCadastro(request.POST)
+	form = ImovelCadastro(request.POST, request.FILES)
 	if not form.is_valid():
 		return render(request, 'rent/cadastro_form.html', {'form': form})
 	obj = form.save(commit=False)

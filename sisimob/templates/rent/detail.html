@@ -2,11 +2,11 @@
 <div class="jumbotron">
     <div class="container">
         <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src={{ imovel.photo.url }} alt="Card image cap">
             <div class="card-block">
-                <h3 class="card-title">{{imovel.nome}}</h4>
-                <p class="card-text">{{imovel.endereco}}</p>
-                <p class="card-text">{{imovel.preco}}</p>
+                <h3 class="card-title">{{ imovel.nome }}</h4>
+                <p class="card-text">{{ imovel.endereco }}</p>
+                <p class="card-text">{{ imovel.preco }}</p>
                 <a href="/listview" class="btn btn-primary btn-lg">Voltar para a lista</a>
             </div>
         </div>
