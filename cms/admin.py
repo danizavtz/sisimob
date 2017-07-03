@@ -5,6 +5,9 @@ class ImovelAdmin(admin.ModelAdmin):
     model = Imovel
     list_display = ('nome', 'endereco')
     search_fields = ('endereco',)
+    list_display_links = None
     actions = None
+    def has_add_permission(self, request):
+        return False
 
 admin.site.register(Imovel,ImovelAdmin)
