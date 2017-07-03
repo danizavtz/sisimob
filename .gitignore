@@ -1,2 +1,2 @@
 myenv/
-*.sqlite3
+sisimob/db.sqlite3
