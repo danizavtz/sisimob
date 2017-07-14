@@ -1,4 +1,5 @@
 myenv/
+cms/migrations/
 sisimob/db.sqlite3
 sisimob/__pycache__
 cms/__pycache__

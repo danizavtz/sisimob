@@ -7,7 +7,7 @@
                 <h3 class="card-title">{{ imovel.nome }}</h4>
                 <p class="card-text">{{ imovel.endereco }}</p>
                 <p class="card-text">{{ imovel.preco }}</p>
-                <a href="/listview" class="btn btn-primary btn-lg">Voltar para a lista</a>
+                <a href="{% url 'cms:imoveis_view' %}" class="btn btn-primary btn-lg">Voltar para a lista</a>
             </div>
         </div>
     </div>
